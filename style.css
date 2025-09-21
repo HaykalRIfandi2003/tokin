@@ -1,0 +1,273 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/* utilities */
+
+* {
+    font-family: dm sans;
+}
+
+body {
+    background-color: black !important;
+   
+    
+}
+
+.form-control::placeholder{
+    color: #adb5bd !important;
+    opacity: 1 !important;
+}
+
+/* navbar */
+.navbar{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
+}
+
+
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar .btn-primer {
+    background-color: #621fd6;
+    color: white;
+    transition: all ease 100ms;
+}
+
+.navbar .btn-primer:hover {
+    background-color: #621fd6;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(124, 30, 255, 0.683);
+
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: all ease 300ms;
+}
+
+.navbar-nav .nav-link::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   height: 2px;
+   background: #621fd6;
+   box-shadow: 0 0 8px rgba(124, 30, 255, 0.6);
+   transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover{
+    color: white;
+    text-shadow: 0 10px 20px rgba(124, 30, 255, 0.683);
+    transform: scale(1.1);
+    font-weight: 700;
+
+}
+
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+/* navbar */
+
+/* offcanvas */
+.navbar .btn-offcanvas {
+    color: white;
+    padding: 5px 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .btn-offcanvas::before, .navbar .btn-offcanvas::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgba(124, 30, 255, 0.8);
+    box-shadow: 0 0 8px rgba(124, 30, 255, 0.9), 0 0 24px rgba(124, 30, 255, 0.4), 0 0 16px rgba(124, 30, 255, 0.6),;
+    transition: all 0.5s ease;
+}
+
+.navbar .btn-offcanvas::before {
+    top: 0;
+    left: 0;
+
+}
+
+.navbar .btn-offcanvas::after {
+    bottom: 0;
+    right: 0;
+}
+
+.navbar .btn-offcanvas:hover::before {
+    width: 100%;
+}
+
+.navbar .btn-offcanvas:hover::after {
+    width: 100%;
+}
+/* offcanvas */
+
+/* hero */
+.hero {
+    background-image: url(/assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height : 500px;
+}
+
+.hero h1{
+    font-size: 65px;
+    text-shadow: 0 10px 40px rgb(124, 30, 255);
+}
+/* hero */
+
+/* product */
+.product .item img{
+    width: 100%;
+}
+
+.product .item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all ease 200ms;
+}
+
+.product .item:hover{
+    box-shadow: 0 10px 20px rgba(124,30,255,0.369);
+}
+
+.product .item figcaption {
+    position: absolute;
+    bottom: -3rem;
+    background-color: rgba(0,0,0,0.76);
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    transition: all ease 200ms;
+}
+
+.product .item figcaption:hover{
+    bottom: 0;
+}
+/* product */
+
+/* support */
+.support .btn-primer {
+    background-color: #621fd6;
+    color: white;
+}
+
+.support .btn-primer:hover{
+    background-color: #621fd6;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(124, 30, 255, 0.683);
+}
+/* support */
+
+/* login */
+.login .btn-primer {
+    background-color: #621fd6;
+    color: white;
+}
+
+.login .btn-primer:hover{
+    background-color: #621fd6;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(124, 30, 255, 0.683);
+}
+
+.login .text-link {
+    color: #621fd6;
+    text-decoration: none;
+}
+/* login */
+
+/* register */
+.register .btn-primer {
+    background-color: #621fd6;
+    color: white;
+}
+
+.register .btn-primer:hover{
+    background-color: #621fd6;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(124, 30, 255, 0.683);
+}
+
+.register .text-link {
+    color: #621fd6;
+    text-decoration: none;
+/* register */
+}
+
+/* detail */
+.detail {
+    margin-top: 100px;
+}
+
+.detail .card .btn {
+    color: white;
+    width: 100%;
+}
+.detail .card .btn:hover{
+    color: #adb5bd;
+    width: 100%;
+}
+/* detail */
+.detail .btn-primer {
+    background-color: #621fd6;
+    color: white;
+}
+
+.detail .btn-primer:hover{
+    background-color: #621fd6;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(124, 30, 255, 0.683);
+}
+
+/* Transaction */
+.transaction {
+    margin-top: 100px;
+}
+/* Transaction */
+
+/* mobile responsive */
+@media (max-width: 992px) { 
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .navbar {
+        background-color: black;
+        text-align: center;
+    }
+
+    .navbar .btn {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navbar .navbar-toggler{
+        background-color: white;
+    }
+    
+ }
+/* mobile responsive */
